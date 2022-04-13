@@ -108,6 +108,9 @@ video {
   height: 100%;
 }
 
+.list-group{
+  min-width: fit-content;
+}
 .toolImages{
   min-width: 200px;
 }
@@ -142,4 +145,22 @@ video {
   color: white;
   text-align: center;
   font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* set all row class childs background color to red*/
+  .row > *{
+    width: 100%;
+  }
+
+  .row > .col-8{
+    padding-top: 15px;
+  }
 }

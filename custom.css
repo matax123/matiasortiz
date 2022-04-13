@@ -108,8 +108,13 @@ video {
   height: 100%;
 }
 
+.toolImages{
+  min-width: 200px;
+}
+
 .toolImages img {
   padding: 15px;
+  max-width: 100%;
 }
 
 .projectVideo {

@@ -5,7 +5,7 @@ color4 = "rgb(238, 238, 238)"
 
 new WOW().init()
 
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
     $("#loading").fadeOut(1000);
     $("body").removeClass("preload");
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -18,4 +18,4 @@ window.onload = function () {
     } else {
         document.getElementById("telefono").href = pcURL;
     }
-}
+})

@@ -44,10 +44,12 @@ window.onload = function(){
 }
 
 async function loadVideos(){
+    console.log("se empieza loadVideos")
     let videoCatDisaster = document.getElementById("videoCatDisaster")
     videoCatDisaster.src = "videos/videoCatDisaster.mp4"
     let videoFt = document.getElementById("videoFt")
     videoFt.src = "videos/Sistema FT.mp4"
     let videoAntsWorld = document.getElementById("videoAntsWorld")
     videoAntsWorld.src = "videos/antsWorld.mp4"
+    console.log("se termina loadVideos")
 }

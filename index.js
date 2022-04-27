@@ -11,7 +11,7 @@ function imgLoaded() {
     loadedCounter++
 }
 
-var lazyLoadInstance = new LazyLoad();
+// var lazyLoadInstance = new LazyLoad();
 
 document.addEventListener("DOMContentLoaded", function () {
     let imgs = document.querySelectorAll(".projectImage")

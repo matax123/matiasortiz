@@ -27,22 +27,7 @@ function imgLoaded() {
 //     }
 // })
 
-document.addEventListener("DOMContentLoaded", function () {
-    $("#loading").fadeOut(1000);
-    $("body").removeClass("preload");
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-    var mobileURL = "https://api.whatsapp.com/send/?phone=56991353540&text=";
-    var pcURL = "https://web.whatsapp.com/send?phone=56991353540&text=";
-
-    if (isMobile) {
-        document.getElementById("telefono").href = mobileURL;
-    } else {
-        document.getElementById("telefono").href = pcURL;
-    }
-})
-
-// window.onload = function(){
+// document.addEventListener("DOMContentLoaded", function () {
 //     $("#loading").fadeOut(1000);
 //     $("body").removeClass("preload");
 //     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -55,10 +40,25 @@ document.addEventListener("DOMContentLoaded", function () {
 //     } else {
 //         document.getElementById("telefono").href = pcURL;
 //     }
+// })
 
-//     //load videos
-//     loadVideos()
-// }
+window.onload = function(){
+    $("#loading").fadeOut(1000);
+    $("body").removeClass("preload");
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    var mobileURL = "https://api.whatsapp.com/send/?phone=56991353540&text=";
+    var pcURL = "https://web.whatsapp.com/send?phone=56991353540&text=";
+
+    if (isMobile) {
+        document.getElementById("telefono").href = mobileURL;
+    } else {
+        document.getElementById("telefono").href = pcURL;
+    }
+
+    //load videos
+    loadVideos()
+}
 
 async function loadVideos(){
     console.log("se empieza loadVideos")

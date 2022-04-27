@@ -43,6 +43,10 @@ window.onload = function(){
     }
 
     //load videos
+    loadVideos()
+}
+
+async function loadVideos(){
     let videoCatDisaster = document.getElementById("videoCatDisaster")
     videoCatDisaster.src = "videos/videoCatDisaster.mp4"
     let videoFt = document.getElementById("videoFt")

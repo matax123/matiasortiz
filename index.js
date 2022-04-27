@@ -6,27 +6,24 @@ color4 = "rgb(238, 238, 238)"
 new WOW().init()
 
 // var imgCount;
-// var loadedCounter = 0
-// function imgLoaded() {
-//     loadedCounter++
-//     if (loadedCounter == imgCount) {
+var loadedCounter = 0
+function imgLoaded() {
+    loadedCounter++
+}
 
-//     }
-// }
+document.addEventListener("DOMContentLoaded", function () {
+    let imgs = document.querySelectorAll(".projectImage")
+    console.log(imgs)
+    imgCount = imgs.length
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     let imgs = document.querySelectorAll(".projectImage")
-//     console.log(imgs)
-//     imgCount = imgs.length
-
-//     for (var i = 0; i < imgs.length; i++) {
-//         console.log("new img onload")
-//         imgs[i].onload = function (e) {
-//             console.log(e.target)
-//             imgLoaded()
-//         }
-//     }
-// })
+    for (var i = 0; i < imgs.length; i++) {
+        console.log("new img onload")
+        imgs[i].onload = function (e) {
+            console.log(e.target)
+            imgLoaded()
+        }
+    }
+})
 
 window.onload = function(){
     $("#loading").fadeOut(1000);

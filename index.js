@@ -45,8 +45,8 @@ window.onload = function(){
     //load videos
     let videoCatDisaster = document.getElementById("videoCatDisaster")
     videoCatDisaster.src = "videos/videoCatDisaster.mp4"
-    let videoFT = document.getElementById("videoFT")
-    videoFT.src = "videos/Sistema FT.mp4"
+    let videoFt = document.getElementById("videoFt")
+    videoFt.src = "videos/Sistema FT.mp4"
     let videoAntsWorld = document.getElementById("videoAntsWorld")
     videoAntsWorld.src = "videos/antsWorld.mp4"
 }
